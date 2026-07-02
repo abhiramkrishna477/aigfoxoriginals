@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aigfox Originals | Cinematic Marketing</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#050505',
+                        surface: '#111111',
+                        surfaceHover: '#1a1a1a',
+                        brandWhite: '#f8f8f8',
+                        brandGray: '#888888',
+                        accent: '#ffffff',
+                    },
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        slideUp: { '0%': { transform: 'translateY(20px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+        body { background-color: #050505; color: #f8f8f8; -webkit-font-smoothing: antialiased; }
+        .video-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .video-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+    </style>
+</head>
+<body class="font-body bg-background text-brandWhite selection:bg-brandWhite selection:text-background">
+
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-background/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="aigfox balck logo.png" alt="Aigfox Originals" class="h-8 w-auto brightness-0 invert">
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium tracking-wide">
+                <a href="#work" class="hover:text-brandGray transition-colors">Work</a>
+                <a href="#expertise" class="hover:text-brandGray transition-colors">Expertise</a>
+                <a href="#contact" class="hover:text-brandGray transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="bg-brandWhite text-background px-4 py-1.5 text-xs font-semibold rounded-full hover:bg-brandGray hover:text-white transition-all">
+                Start Project
+            </a>
+        </div>
+    </nav>
+
+    <header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="aigfox_fox-1.gif" alt="Hero Background" class="w-full h-full object-cover opacity-40 mix-blend-screen" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2071&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto animate-slide-up">
+            <span class="text-brandGray uppercase tracking-[0.3em] text-xs font-semibold mb-6 block">Cinematic Commercial Production</span>
+            <h1 class="font-heading font-extrabold text-5xl md:text-7xl lg:text-8xl leading-[1.1] tracking-tight mb-8">
+                Stories That <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Connect.</span><br>
+                Ideas That <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-white">Impact.</span>
+            </h1>
+            <p class="text-brandGray text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
+                A creative studio crafting high-fidelity video advertising and commercial storytelling that elevates brands and engages audiences.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#work" class="bg-brandWhite text-background px-8 py-4 rounded-full font-semibold hover:scale-105 transition-transform flex items-center gap-2">
+                    <i class="fa-solid fa-play"></i> View Showreel
+                </a>
+                <a href="#contact" class="bg-surface border border-white/10 px-8 py-4 rounded-full font-semibold hover:bg-surfaceHover transition-colors">
+                    Work With Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="w-full border-y border-white/10 bg-surface overflow-hidden py-3 flex items-center text-xs tracking-[0.2em] uppercase font-semibold text-brandGray">
+        <div class="bg-brandWhite text-background px-6 py-3 z-10 flex items-center gap-2 absolute left-0 font-bold">
+            <span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span> LIVE
+        </div>
+        <div class="flex-1 overflow-hidden relative ml-32">
+            <div class="flex whitespace-nowrap animate-[scroll_25s_linear_infinite] gap-12">
+                <span>Now Showing: New Brand Campaigns Released</span>
+                <span class="text-white/20">•</span>
+                <span>Production Pipeline: Commercial Projects Active</span>
+                <span class="text-white/20">•</span>
+                <span>Hiring: Post-Production Specialists</span>
+                <span class="text-white/20">•</span>
+                <span>Now Showing: New Brand Campaigns Released</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-6 py-24" id="work">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div>
+                <h2 class="font-heading font-bold text-4xl md:text-5xl tracking-tight mb-4">Featured Campaigns</h2>
+                <p class="text-brandGray max-w-lg leading-relaxed">A curated selection of our recent commercial projects, highlighting strategic narrative direction and premium visual execution.</p>
+            </div>
+        </div>
+
+        <div class="w-full mb-10 relative rounded-2xl overflow-hidden group video-card cursor-pointer border border-white/10" onclick="playVideo(this)">
+            
+
+                        <!-- Featured Large Video: Updated to match design of image_527599.jpg -->
+            <div class="w-full mb-10 video-card group border border-white/5 rounded-xl overflow-hidden bg-surface" onclick="playVideo(this)">
+                <div class="relative cursor-pointer">
+                    <!-- VIRAL BADGE -->
+                 
+                    
+                    <div class="aspect-video relative w-full overflow-hidden bg-black">
+                        <div class="video-facade absolute inset-0 z-10">
+                            <img data-video-type="vimeo" data-video-id="1206060434" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" alt="Nikshan World Cup Campaign">
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all">
+                                <i class="fa-solid fa-circle-play text-5xl text-white/80 group-hover:text-white drop-shadow-lg transition-transform group-hover:scale-110"></i>
+                            </div>
+                        </div>
+                        <iframe data-src="https://player.vimeo.com/video/1206060434?h=6132f3c42e&title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Content Section -->
+                <div class="p-6">
+                    <div class="text-[10px] uppercase tracking-widest text-brandGray mb-2 font-semibold">Nikshan Electronics • World Cup Campaign</div>
+                    <h3 class="font-heading font-semibold text-2xl leading-snug mb-3">The World Cup Promo Experience</h3>
+                    <p class="text-sm text-brandGray leading-relaxed">
+                        A comprehensive promotional campaign designed for the World Cup season, highlighting product offerings while capturing the energetic spirit of the tournament.
+                    </p>
+                </div>
+            </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div class="video-card bg-surface rounded-xl overflow-hidden border border-white/5 cursor-pointer group" onclick="playVideo(this)">
+                <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-red-600/95 backdrop-blur-md text-white px-3 py-1.5 rounded-full font-bold text-[10px] tracking-widest shadow-xl border border-red-400/50 uppercase">
+                    <i class="fa-solid fa-fire text-yellow-300"></i> 1M+ Views
+                </div>
+                <div class="aspect-video relative w-full overflow-hidden bg-black">
+                    <div class="video-facade absolute inset-0 z-10">
+                        <img data-video-type="vimeo" data-video-id="1201327553" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" alt="Monsoon Sale">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all">
+                            <i class="fa-solid fa-circle-play text-4xl text-white/80 group-hover:text-white drop-shadow-lg transition-transform group-hover:scale-110"></i>
+                        </div>
+                    </div>
+                    <iframe data-src="https://player.vimeo.com/video/1201327553?h=a0c819f73e&title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-6">
+                    <div class="text-[10px] uppercase tracking-widest text-brandGray mb-2 font-semibold">Nikshan Group • Seasonal Promo</div>
+                    <h4 class="font-heading font-semibold text-xl leading-snug mb-3">Monsoon Sale: Inverters</h4>
+                    <p class="text-sm text-brandGray leading-relaxed">A strategic commercial highlighting essential power backup solutions, driving record-breaking customer engagement.</p>
+                </div>
+            </div>
+
+            <div class="video-card bg-surface rounded-xl overflow-hidden border border-white/5 cursor-pointer group" onclick="playVideo(this)">
+                <div class="aspect-video relative w-full overflow-hidden bg-black">
+                    <div class="video-facade absolute inset-0 z-10">
+                        <img data-video-type="vimeo" data-video-id="1198049108" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" alt="Thumbnail">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all">
+                            <i class="fa-solid fa-circle-play text-4xl text-white/80 group-hover:text-white drop-shadow-lg transition-transform group-hover:scale-110"></i>
+                        </div>
+                    </div>
+                    <iframe data-src="https://player.vimeo.com/video/1198049108?title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+                <div class="p-6">
+                    <div class="text-[10px] uppercase tracking-widest text-brandGray mb-2 font-semibold">Nikshan Group • Air Conditioning</div>
+                    <h4 class="font-heading font-semibold text-xl leading-snug mb-3">Air Conditioner Commercial</h4>
+                    <p class="text-sm text-brandGray leading-relaxed">A narrative-driven advertisement illustrating the comfort and cooling efficiency of Nikshan's air conditioning units.</p>
+                </div>
+            </div>
+            
+            <div class="col-span-1 md:col-span-2 mt-6">
+                <div class="bg-surface rounded-2xl p-1 grid grid-cols-1 md:grid-cols-2 gap-0 overflow-hidden border border-white/10 group video-card cursor-pointer" onclick="playVideo(this)">
+                    <div class="p-10 md:p-14 flex flex-col justify-center relative">
+                        <div class="text-[10px] uppercase tracking-widest text-brandGray mb-4 font-bold border border-white/20 w-max px-3 py-1 rounded-full">Flagship Showcase</div>
+                        <h4 class="font-heading font-bold text-3xl md:text-4xl mb-4 leading-tight group-hover:text-gray-300 transition-colors">Nikshan Grand Showroom Feature</h4>
+                        <p class="text-brandGray mb-8 leading-relaxed">A large-scale cinematic showcase detailing the extensive product range and exceptional customer experience at the Nikshan retail establishment.</p>
+                        <div class="flex items-center gap-3 text-white font-medium"><i class="fa-solid fa-circle-play text-2xl"></i> Watch Feature Film</div>
+                    </div>
+                    <div class="aspect-[4/3] md:aspect-auto w-full h-full relative">
+                        <div class="video-facade absolute inset-0 z-10 bg-black">
+                            <img data-video-type="vimeo" data-video-id="1201345075" class="dynamic-thumb w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" alt="Video Thumbnail">
+                        </div>
+                        <iframe data-src="https://player.vimeo.com/video/1201345075?title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-24" id="expertise">
+            <div class="mb-10">
+                <h2 class="font-heading font-bold text-3xl md:text-4xl tracking-tight mb-4">Viral Social & Reels</h2>
+                <p class="text-brandGray max-w-lg leading-relaxed">High-impact, portrait-oriented content optimized for social media feeds. All our reels are viral sensations.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <script>
+                    const reels = [
+                        { id: '1201349704', title: 'Viral Campaign 01' },
+                        { id: '1201336624', title: 'Viral Campaign 02' },
+                        { id: '1198049107', title: 'Viral Campaign 03' },
+                        { id: '1198049163', title: 'Viral Campaign 04' }
+                    ];
+                    document.write(`
+                        ${reels.map(reel => `
+                            <div class="aspect-[9/16] bg-surface rounded-xl overflow-hidden relative group cursor-pointer border border-white/10 video-card" onclick="playVideo(this)">
+                                <div class="absolute top-3 left-3 z-20 flex items-center gap-1 bg-red-600/90 text-white px-2 py-0.5 rounded-full font-bold text-[8px] uppercase tracking-wider shadow-lg border border-white/10">
+                                    <i class="fa-solid fa-fire text-yellow-300"></i> Viral
+                                </div>
+                                <div class="video-facade absolute inset-0 z-10 bg-black">
+                                    <img data-video-type="vimeo" data-video-id="${reel.id}" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105">
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
+                                        <i class="fa-solid fa-play text-4xl text-white"></i>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 right-4 text-center">
+                                        <div class="bg-black/60 backdrop-blur-md rounded-full py-1.5 px-3 inline-flex items-center gap-1.5 border border-white/10 text-[9px] font-semibold uppercase tracking-widest text-white/90">
+                                            ${reel.title}
+                                        </div>
+                                    </div>
+                                </div>
+                                <iframe data-src="https://player.vimeo.com/video/${reel.id}?title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        `).join('')}
+                    `);
+                </script>
+            </div>
+        </div>
+    </main>
+
+    <section id="contact" class="bg-surface border-t border-white/5 py-24 relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[150px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
+            <div>
+                <h2 class="font-heading font-extrabold text-5xl md:text-6xl tracking-tight mb-6 leading-tight">
+                    Discuss Your <br> <span class="text-brandGray font-light">Next Viral Project.</span>
+                </h2>
+                <p class="text-brandGray text-lg mb-12 max-w-md leading-relaxed">Partner with us to create premium visual storytelling that elevates your brand identity. Select a tier, and initiate a direct consultation.</p>
+                <div class="flex flex-col gap-8">
+                    <a href="https://wa.me/919567038524" target="_blank" class="flex items-center gap-5 group w-max">
+                        <div class="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-green-500 group-hover:border-green-500 group-hover:text-white transition-all">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-brandGray uppercase tracking-widest font-semibold mb-1">Direct WhatsApp</p>
+                            <p class="font-medium text-xl hover:text-green-400 transition-colors">+91 95670 38524</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-background rounded-2xl p-8 lg:p-10 border border-white/10 shadow-2xl relative">
+                <div id="formMessage" class="hidden absolute top-4 left-1/2 -translate-x-1/2 bg-red-500/90 text-white px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase">Please enter your name</div>
+                <form id="contactForm" class="space-y-6">
+                    <input type="text" id="contactName" placeholder="Full Name" class="w-full bg-surface border border-white/10 rounded-lg px-4 py-3.5 text-sm focus:outline-none focus:border-white focus:ring-1 focus:ring-white placeholder-gray-600 transition-all text-white" required>
+                    <button type="button" onclick="submitToWhatsApp()" class="w-full bg-brandWhite text-black font-semibold rounded-lg py-4 hover:bg-green-500 hover:text-white transition-all flex items-center justify-center gap-3 mt-4 shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Connect on WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function submitToWhatsApp() {
+            const nameInput = document.getElementById('contactName').value.trim();
+            const messageBox = document.getElementById('formMessage');
+            if (!nameInput) {
+                messageBox.classList.remove('hidden');
+                setTimeout(() => { messageBox.classList.add('hidden'); }, 3000);
+                return;
+            }
+            const whatsappUrl = `https://wa.me/919567038524?text=Hello! I'm ${nameInput} and I'd like to work with AIGFOX.`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function playVideo(container) {
+            const facade = container.querySelector('.video-facade');
+            const iframe = container.querySelector('iframe');
+            if (facade && iframe) {
+                facade.style.opacity = '0';
+                setTimeout(() => { facade.style.display = 'none'; }, 500);
+                const src = iframe.getAttribute('data-src');
+                iframe.setAttribute('src', src + (src.includes('?') ? '&' : '?') + 'autoplay=1');
+            }
+        }
+
+        function initVideoThumbnails() {
+            const thumbs = document.querySelectorAll('.dynamic-thumb');
+            thumbs.forEach(img => {
+                const id = img.getAttribute('data-video-id');
+                if (id) {
+                    fetch(`https://vimeo.com/api/v2/video/${id}.json`)
+                        .then(response => response.json())
+                        .then(data => { if(data && data[0]) img.src = data[0].thumbnail_large; })
+                        .catch(e => console.log('Vimeo thumb load'));
+                }
+            });
+        }
+        window.addEventListener('DOMContentLoaded', initVideoThumbnails);
+    </script>
+</body>
+</html>
