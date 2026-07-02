@@ -57,7 +57,7 @@
     <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-background/80 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="aigfox balck logo.png" alt="Aigfox Originals" class="h-8 w-auto brightness-0 invert" onerror="this.onerror=null; this.src='https://placehold.co/150x50/050505/ffffff?text=AIGFOX';">
+                <img src="aigfox balck logo.png" alt="Aigfox Originals" class="h-8 w-auto brightness-0 invert">
             </div>
             <div class="hidden md:flex gap-8 text-sm font-medium tracking-wide">
                 <a href="#work" class="hover:text-brandGray transition-colors">Work</a>
@@ -105,38 +105,32 @@
             </div>
         </div>
 
-        <div class="w-full mb-10 video-card group border border-white/5 rounded-xl overflow-hidden bg-surface" onclick="playVideo(this)">
-            <div class="relative cursor-pointer">
-                <div class="aspect-video relative w-full overflow-hidden bg-black">
-                    <div class="video-facade absolute inset-0 z-10">
-                        <img data-video-type="vimeo" data-video-id="1206060434" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" alt="Nikshan World Cup Campaign">
-                        
-                        <!-- Fullscreen Feature Button -->
-                        <button onclick="goFullscreen(event, this)" class="absolute top-4 right-4 z-30 bg-black/50 hover:bg-black/90 border border-white/20 text-white w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-md transition-all opacity-0 group-hover:opacity-100" title="Play Fullscreen">
-                            <i class="fa-solid fa-expand text-sm"></i>
-                        </button>
-
-                        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all pointer-events-none">
-                            <i class="fa-solid fa-circle-play text-5xl text-white/80 group-hover:text-white drop-shadow-lg transition-transform group-hover:scale-110"></i>
+        <div class="w-full mb-10 relative rounded-2xl overflow-hidden group video-card cursor-pointer border border-white/10" onclick="playVideo(this)">
+            
+            <div class="w-full mb-10 video-card group border border-white/5 rounded-xl overflow-hidden bg-surface" onclick="playVideo(this)">
+                <div class="relative cursor-pointer">
+                    <div class="aspect-video relative w-full overflow-hidden bg-black">
+                        <div class="video-facade absolute inset-0 z-10">
+                            <img data-video-type="vimeo" data-video-id="1206060434" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" alt="Nikshan World Cup Campaign">
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all">
+                                <i class="fa-solid fa-circle-play text-5xl text-white/80 group-hover:text-white drop-shadow-lg transition-transform group-hover:scale-110"></i>
+                            </div>
                         </div>
+                        <iframe data-src="https://player.vimeo.com/video/1206060434?h=6132f3c42e&title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                     </div>
-                    <iframe data-src="https://player.vimeo.com/video/1206060434?h=6132f3c42e&title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="p-6">
+                    <div class="text-[10px] uppercase tracking-widest text-brandGray mb-2 font-semibold">Nikshan Electronics • World Cup Campaign</div>
+                    <h3 class="font-heading font-semibold text-2xl leading-snug mb-3">The World Cup Promo Experience</h3>
+                    <p class="text-sm text-brandGray leading-relaxed">
+                        A comprehensive promotional campaign designed for the World Cup season, highlighting product offerings while capturing the energetic spirit of the tournament.
+                    </p>
                 </div>
             </div>
 
-            <!-- Content Section -->
-            <div class="p-6">
-                <div class="text-[10px] uppercase tracking-widest text-brandGray mb-2 font-semibold">Nikshan Electronics • World Cup Campaign</div>
-                <h3 class="font-heading font-semibold text-2xl leading-snug mb-3">The World Cup Promo Experience</h3>
-                <p class="text-sm text-brandGray leading-relaxed">
-                    A comprehensive promotional campaign designed for the World Cup season, highlighting product offerings while capturing the energetic spirit of the tournament.
-                </p>
-            </div>
-        </div>
-
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-            
-            <!-- Video 1: Monsoon Sale -->
+            <!-- Video 1 -->
             <div class="video-card bg-surface rounded-xl overflow-hidden border border-white/5 cursor-pointer group" onclick="playVideo(this)">
                 <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-red-600/95 backdrop-blur-md text-white px-3 py-1.5 rounded-full font-bold text-[10px] tracking-widest shadow-xl border border-red-400/50 uppercase">
                     <i class="fa-solid fa-fire text-yellow-300"></i> 1M+ Views
@@ -144,17 +138,11 @@
                 <div class="aspect-video relative w-full overflow-hidden bg-black">
                     <div class="video-facade absolute inset-0 z-10">
                         <img data-video-type="vimeo" data-video-id="1201327553" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" alt="Monsoon Sale">
-                        
-                        <!-- Fullscreen Feature Button -->
-                        <button onclick="goFullscreen(event, this)" class="absolute top-4 right-4 z-30 bg-black/50 hover:bg-black/90 border border-white/20 text-white w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-md transition-all opacity-0 group-hover:opacity-100" title="Play Fullscreen">
-                            <i class="fa-solid fa-expand text-sm"></i>
-                        </button>
-
-                        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all pointer-events-none">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all">
                             <i class="fa-solid fa-circle-play text-4xl text-white/80 group-hover:text-white drop-shadow-lg transition-transform group-hover:scale-110"></i>
                         </div>
                     </div>
-                    <iframe data-src="https://player.vimeo.com/video/1201327553?h=a0c819f73e&title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <iframe data-src="https://player.vimeo.com/video/1201327553?h=a0c819f73e&title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                 </div>
                 <div class="p-6">
                     <div class="text-[10px] uppercase tracking-widest text-brandGray mb-2 font-semibold">Nikshan Group • Seasonal Promo</div>
@@ -163,22 +151,34 @@
                 </div>
             </div>
 
-            <!-- Video 2: Air Conditioner -->
+            <!-- Video 2 (Teresa Designs) -->
             <div class="video-card bg-surface rounded-xl overflow-hidden border border-white/5 cursor-pointer group" onclick="playVideo(this)">
                 <div class="aspect-video relative w-full overflow-hidden bg-black">
                     <div class="video-facade absolute inset-0 z-10">
-                        <img data-video-type="vimeo" data-video-id="1198049108" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" alt="Air Conditioner">
-                        
-                        <!-- Fullscreen Feature Button -->
-                        <button onclick="goFullscreen(event, this)" class="absolute top-4 right-4 z-30 bg-black/50 hover:bg-black/90 border border-white/20 text-white w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-md transition-all opacity-0 group-hover:opacity-100" title="Play Fullscreen">
-                            <i class="fa-solid fa-expand text-sm"></i>
-                        </button>
-
-                        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all pointer-events-none">
+                        <img data-video-type="vimeo" data-video-id="1198049166" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" alt="Teresa Designs Campaign">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all">
                             <i class="fa-solid fa-circle-play text-4xl text-white/80 group-hover:text-white drop-shadow-lg transition-transform group-hover:scale-110"></i>
                         </div>
                     </div>
-                    <iframe data-src="https://player.vimeo.com/video/1198049108?title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <iframe data-src="https://player.vimeo.com/video/1198049166?h=e1d1d7bd0a&title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                </div>
+                <div class="p-6">
+                    <div class="text-[10px] uppercase tracking-widest text-brandGray mb-2 font-semibold">Teresa Designs • Fashion Promo</div>
+                    <h4 class="font-heading font-semibold text-xl leading-snug mb-3">Timeless Fashion Collection</h4>
+                    <p class="text-sm text-brandGray leading-relaxed">A visual showcase of Teresa Designs' latest campaign, featuring elegant, new fashions tailored to never trend out.</p>
+                </div>
+            </div>
+
+            <!-- Video 3 (Air Conditioning) -->
+            <div class="video-card bg-surface rounded-xl overflow-hidden border border-white/5 cursor-pointer group" onclick="playVideo(this)">
+                <div class="aspect-video relative w-full overflow-hidden bg-black">
+                    <div class="video-facade absolute inset-0 z-10">
+                        <img data-video-type="vimeo" data-video-id="1198049108" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" alt="Thumbnail">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all">
+                            <i class="fa-solid fa-circle-play text-4xl text-white/80 group-hover:text-white drop-shadow-lg transition-transform group-hover:scale-110"></i>
+                        </div>
+                    </div>
+                    <iframe data-src="https://player.vimeo.com/video/1198049108?title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                 </div>
                 <div class="p-6">
                     <div class="text-[10px] uppercase tracking-widest text-brandGray mb-2 font-semibold">Nikshan Group • Air Conditioning</div>
@@ -187,30 +187,24 @@
                 </div>
             </div>
             
-            <!-- Video 3: Teresa Designs (Newly Added) -->
+            <!-- Video 4 (Newly Added Promo) -->
             <div class="video-card bg-surface rounded-xl overflow-hidden border border-white/5 cursor-pointer group" onclick="playVideo(this)">
                 <div class="aspect-video relative w-full overflow-hidden bg-black">
                     <div class="video-facade absolute inset-0 z-10">
-                        <img data-video-type="vimeo" data-video-id="1198049166" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" alt="Teresa Designs Fashions">
-                        
-                        <!-- Fullscreen Feature Button -->
-                        <button onclick="goFullscreen(event, this)" class="absolute top-4 right-4 z-30 bg-black/50 hover:bg-black/90 border border-white/20 text-white w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-md transition-all opacity-0 group-hover:opacity-100" title="Play Fullscreen">
-                            <i class="fa-solid fa-expand text-sm"></i>
-                        </button>
-
-                        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all pointer-events-none">
+                        <img data-video-type="vimeo" data-video-id="1201331480" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" alt="Cinematic Promo">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-all">
                             <i class="fa-solid fa-circle-play text-4xl text-white/80 group-hover:text-white drop-shadow-lg transition-transform group-hover:scale-110"></i>
                         </div>
                     </div>
-                    <iframe data-src="https://player.vimeo.com/video/1198049166?h=e1d1d7bd0a&title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                    <iframe data-src="https://player.vimeo.com/video/1201331480?h=195360886d&title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                 </div>
                 <div class="p-6">
-                    <div class="text-[10px] uppercase tracking-widest text-brandGray mb-2 font-semibold">Teresa Designs • Brand Campaign</div>
-                    <h4 class="font-heading font-semibold text-xl leading-snug mb-3">Timeless Fashion Showcase</h4>
-                    <p class="text-sm text-brandGray leading-relaxed">A striking visual campaign showcasing their newest fashion line, designed to highlight elegance and styles that will never go out of trend.</p>
+                    <div class="text-[10px] uppercase tracking-widest text-brandGray mb-2 font-semibold">Featured Brand • Cinematic Promo</div>
+                    <h4 class="font-heading font-semibold text-xl leading-snug mb-3">Wash Smarter, Live Easier</h4>
+                    <p class="text-sm text-brandGray leading-relaxed">A high-impact commercial produced for Nikshan, blending cinematic visuals with product-focused storytelling to highlight performance and trust.</p>
                 </div>
             </div>
-            
+
             <div class="col-span-1 md:col-span-2 mt-6">
                 <div class="bg-surface rounded-2xl p-1 grid grid-cols-1 md:grid-cols-2 gap-0 overflow-hidden border border-white/10 group video-card cursor-pointer" onclick="playVideo(this)">
                     <div class="p-10 md:p-14 flex flex-col justify-center relative">
@@ -222,13 +216,8 @@
                     <div class="aspect-[4/3] md:aspect-auto w-full h-full relative">
                         <div class="video-facade absolute inset-0 z-10 bg-black">
                             <img data-video-type="vimeo" data-video-id="1201345075" class="dynamic-thumb w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" alt="Video Thumbnail">
-                            
-                            <!-- Fullscreen Feature Button -->
-                            <button onclick="goFullscreen(event, this)" class="absolute top-4 right-4 z-30 bg-black/50 hover:bg-black/90 border border-white/20 text-white w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-md transition-all opacity-0 group-hover:opacity-100" title="Play Fullscreen">
-                                <i class="fa-solid fa-expand text-sm"></i>
-                            </button>
                         </div>
-                        <iframe data-src="https://player.vimeo.com/video/1201345075?title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <iframe data-src="https://player.vimeo.com/video/1201345075?title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -256,22 +245,16 @@
                                 </div>
                                 <div class="video-facade absolute inset-0 z-10 bg-black">
                                     <img data-video-type="vimeo" data-video-id="${reel.id}" class="dynamic-thumb w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105">
-                                    
-                                    <!-- Fullscreen Feature Button for Reels -->
-                                    <button onclick="goFullscreen(event, this)" class="absolute top-3 right-3 z-30 bg-black/60 hover:bg-black/90 border border-white/20 text-white w-7 h-7 rounded-full flex items-center justify-center backdrop-blur-md transition-all opacity-0 group-hover:opacity-100" title="Play Fullscreen">
-                                        <i class="fa-solid fa-expand text-[10px]"></i>
-                                    </button>
-
-                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20 pointer-events-none">
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
                                         <i class="fa-solid fa-play text-4xl text-white"></i>
                                     </div>
-                                    <div class="absolute bottom-4 left-4 right-4 text-center pointer-events-none">
+                                    <div class="absolute bottom-4 left-4 right-4 text-center">
                                         <div class="bg-black/60 backdrop-blur-md rounded-full py-1.5 px-3 inline-flex items-center gap-1.5 border border-white/10 text-[9px] font-semibold uppercase tracking-widest text-white/90">
                                             ${reel.title}
                                         </div>
                                     </div>
                                 </div>
-                                <iframe data-src="https://player.vimeo.com/video/${reel.id}?title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                <iframe data-src="https://player.vimeo.com/video/${reel.id}?title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                             </div>
                         `).join('')}
                     `);
@@ -333,32 +316,7 @@
                 facade.style.opacity = '0';
                 setTimeout(() => { facade.style.display = 'none'; }, 500);
                 const src = iframe.getAttribute('data-src');
-                if (src && !iframe.src) {
-                    iframe.setAttribute('src', src + (src.includes('?') ? '&' : '?') + 'autoplay=1');
-                }
-            }
-        }
-
-        // Feature: Automatically trigger Fullscreen on any specific video iframe container
-        function goFullscreen(event, btnElement) {
-            event.stopPropagation(); // Prevent duplicate calls to playVideo from outer container
-            
-            const container = btnElement.closest('.video-card');
-            if (container) {
-                // First ensure video starts playing
-                playVideo(container);
-                
-                const iframe = container.querySelector('iframe');
-                if (iframe) {
-                    // Use standard fullscreen API on the iframe
-                    if (iframe.requestFullscreen) {
-                        iframe.requestFullscreen();
-                    } else if (iframe.webkitRequestFullscreen) { /* Safari */
-                        iframe.webkitRequestFullscreen();
-                    } else if (iframe.msRequestFullscreen) { /* IE11 */
-                        iframe.msRequestFullscreen();
-                    }
-                }
+                iframe.setAttribute('src', src + (src.includes('?') ? '&' : '?') + 'autoplay=1');
             }
         }
 
@@ -370,11 +328,10 @@
                     fetch(`https://vimeo.com/api/v2/video/${id}.json`)
                         .then(response => response.json())
                         .then(data => { if(data && data[0]) img.src = data[0].thumbnail_large; })
-                        .catch(e => console.log('Vimeo thumb load error'));
+                        .catch(e => console.log('Vimeo thumb load error', e));
                 }
             });
         }
-        
         window.addEventListener('DOMContentLoaded', initVideoThumbnails);
     </script>
 </body>
